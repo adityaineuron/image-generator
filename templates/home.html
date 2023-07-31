@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Image Generator</title>
+</head>
+<body>
+    <h1>Text to Image Generator</h1>
+    <form method="POST" action="/generate">
+        <label for="text_prompt">Enter Text Prompt:</label>
+        <br>
+        <input type="text" name="text_prompt" id="text_prompt" required>
+        <br>
+        <input type="submit" value="Generate Image">
+    </form>
+    {% if image_url %}
+    <div>
+        <strong>Generated Image:</strong>
+        <img src="{{ image_url }}" alt="Generated Image">
+    </div>
+    {% endif %}
+</body>
+</html>
