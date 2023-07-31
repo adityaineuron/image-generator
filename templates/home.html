@@ -12,11 +12,13 @@
         <br>
         <input type="submit" value="Generate Image">
     </form>
-    {% if image_url %}
+    {% if image_urls %}
+      
     <div>
         <strong>Generated Image:</strong>
         <img src="{{ image_url }}" alt="Generated Image">
     </div>
+      
     {% endif %}
 </body>
 </html>
