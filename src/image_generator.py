@@ -18,7 +18,7 @@ class ImageGenerator:
             response = openai.Image.create(
                 model="image-alpha-001",
                 prompt=self.text_prompt,
-                n=2,  # Number of images to generate
+                n=5,  # Number of images to generate
                 size="512x512" 
             )
             return response['data']
